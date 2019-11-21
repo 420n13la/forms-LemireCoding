@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form>
+		<fieldset>
+			<legend>Registration</legend>
+
+			<label for="name">Username </label><input type="text" name="username" id="name">
+
+			<label for="status">Status </label><select name="status" id="status"><option value="student">Student</option><option value="teacher">Teacher</option></select>
+
+			<label for="email">E-mail </label><input type="email" id="email" pattern=".+@google.com" size="30" required>
+			<br>
+			<br>
+			<label for="phone">Phone </label><input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required>
+
+            <label for="url">Website </label>
+            <input type="url" name="url" id="url"placeholder="https://..."pattern="https://.*" size="30"required>
+
+            <label for="about">About </label>
+            <textarea name="about" id="about">Write about yourself</textarea>
+
+            <label for="cities">Cities you visited </label><select name="cities" id="cities" multiple><option value="Montreal">Montreal</option><option value="New york">New York</option><option value="London">London</option><option value="Paris">Paris</option></select>
+
+            <label for="password">Password </label>
+            <input type="password" name="password" id="password"style="width: 100px;>
+
+            <label for="password">Confirm Password </label>
+            <input type="password" name="confirmpassword" id="confirmpassword" style="width: 100px;">
+            <input type="submit" name="submit" value="Register">
+            <input type="reset" name="clear" value="Clear">
+		</fieldset>
+
+		<fieldset>
+			
+			<legend>Search the Site</legend>
+            <input type="search" id="site-search" name="search">
+
+            <button>Search</button>
+		</fieldset>
+
+		<fieldset>
+			<legend>Options</legend>
+
+			<label for="flavorice">Choose a flavor </label>
+			<input list="flavor" name="flavorice" id="flavorice">
+
+			<datalist id="flavorice">
+				<option value="Chocolate">
+				<option value="Coconut">
+				<option value="Mint">
+				<option value="Strawberry">
+				<option value="Vanilla">
+			</datalist>
+			
+
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Sex</legend>
+			<input type="radio" name="male" value="male">Male<br>
+			<input type="radio" name="female" value="female">Female
+		</fieldset>
+
+		<fieldset>
+			<legend>Languages</legend>
+			<input type="checkbox" name="french" value="fr">I speak French<br>
+			<input type="checkbox" name="english" value="en">I speak English<br>
+			<input type="checkbox" name="spanish" value="sp">I speak Spanish
+		</fieldset>
+		
+		<fieldset>
+			<legend>Photo</legend>
+			<label for="avatar">File :</label>
+            <input type="file"id="photo" name="photo"accept="image/png, image/jpeg"><br>
+            <input type="image"id="photo" name="photo" src="upload.png">
+
+
+		</fieldset>
+
+
+
+
+	</form>
+
+
+
+
+
+
+</body>
+</html>
